@@ -10,18 +10,21 @@ The final output is a fully automated, self-contained pipeline that can run inde
 
 ## Architecture
 Orchestrated end-to-end by **Apache Airflow**, containerised with **Docker**.
-<img width="950" height="550" alt="Architecture " src="diagrams/Architecture/Architecture.jpg"/>
-                                  | Layer | Tool |
-                                  |---|---|
-                                  | Storage | Google Cloud Storage |
-                                  | Orchestration | Apache Airflow |
-                                  | Warehouse | Snowflake |
-                                  | Transformation | dbt |
-                                  | Validation | Great Expectations + dbt tests |
+<img width="1000" height="600" alt="Architecture " src="diagrams/Architecture/Architecture.jpg"/>
+
+<div align="center">
+| Layer | Tool |
+|---|---|
+| Storage | Google Cloud Storage |
+| Orchestration | Apache Airflow |
+| Warehouse | Snowflake |
+| Transformation | dbt |
+| Validation | Great Expectations + dbt tests |
+</div>
 
 ###                               Schema
 
-<img width="950" height="550" alt="Schema " src="diagrams/Star%20Schema/Star_Schema.jpg"/>
+<img width="1000" height="600" alt="Schema " src="diagrams/Star%20Schema/Star_Schema.jpg"/>
 
 ---
 

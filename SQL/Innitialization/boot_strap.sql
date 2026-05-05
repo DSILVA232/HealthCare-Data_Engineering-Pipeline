@@ -7,6 +7,15 @@ CREATE ROLE IF NOT EXISTS engineer;
 CREATE ROLE IF NOT EXISTS analyst;
 CREATE ROLE IF NOT EXISTS db_user;
 
+
+-- assign roles to you're self in order to allow future scripts + analytics to run smoothly
+-- to find our you're current user SELECT CURRENT_USER();
+-- To display you're current user roles  SHOW GRANTS TO USER <CURRENTUSER>
+GRANT ROLE engineer TO USER <CURRENTUSER>;
+GRANT ROLE analyst TO USER  <CURRENTUSER>;
+GRANT ROLE db_user TO USER  <CURRENTUSER>;
+
+
 -- Create Wharehouse
 CREATE WAREHOUSE IF NOT EXISTS development
 WITH

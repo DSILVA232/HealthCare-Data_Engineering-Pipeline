@@ -22,3 +22,7 @@ keys/
 
 #airflow
 config/airflow.cfg
+logs/
+
+airflow.cfg
+*.db

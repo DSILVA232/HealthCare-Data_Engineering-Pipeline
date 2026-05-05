@@ -5,8 +5,13 @@ Airflow_Docker/logs/
 __pycache__/
 *.pyc
 
-#env
+#env/venv
 venv/
 .env
 
+#data
 data/raw/*.csv
+
+#os
+.DS_Store
+Thumbs.db

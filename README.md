@@ -1,6 +1,6 @@
 # Healthcare Data Pipeline
 
-An end to end ELT pipeline built to ingest, validate, transform, and serve healthcare data using a modern data stack. The focus of this project is the data engineering lifecycle — not analytics — with an emphasis on data quality, containerisation, and orchestration.
+An end to end ELT pipeline built to ingest, validate, transform, and serve healthcare data using a modern data stack. The focus of this project is the data engineering lifecycle, not analytics, with an emphasis on data quality, containerisation, and orchestration.
 
 <img width="1000" height="650" alt="DAG" src="diagrams/Sucess_Dag_Run.png"/>
 

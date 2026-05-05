@@ -15,3 +15,8 @@ data/raw/*.csv
 #os
 .DS_Store
 Thumbs.db
+
+
+#keys
+
+keys/

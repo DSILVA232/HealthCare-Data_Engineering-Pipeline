@@ -1,2 +1,6 @@
 **/.ge_store_backend_id
 uncommitted/
+
+checkpoints/
+expectations/
+validation_definitions/

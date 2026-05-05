@@ -1,0 +1,1 @@
+ do data profiling with polar rather than pandas , reason being pandas does row wise operation but polar does column based operations , pandas is fine for small datasets but will strugglue with large ,  since our data profiling is all column based operations  even tho is a small dataset will user polar 

@@ -1,0 +1,12 @@
+# airflow
+Airflow_Docker/logs/
+
+#python
+__pycache__/
+*.pyc
+
+#env
+venv/
+.env
+
+data/raw/*.csv

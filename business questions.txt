@@ -1,0 +1,30 @@
+The Business Brief
+Here's how this would actually be handed to a data team:
+
+
+FROM: Sarah Chen, Head of Analytics
+TO: Data Engineering Team
+RE: Hospital Performance & Patient Analytics Pipeline — Q3 Priority
+
+
+We need reliable, scheduled reporting on inpatient admissions across our hospital network. Finance, Clinical Ops, and the Executive team are all pulling numbers from different spreadsheets right now and getting different answers. That stops this quarter.
+The pipeline needs to answer the following, refreshed daily:
+1. Admission Volume & Trends
+How many inpatient discharges are we seeing per hospital, per month? Which hospitals are growing and which are declining quarter-over-quarter? Flag any hospital with >15% volume drop vs same period last year.
+
+2. Cost Efficiency
+What is the average Medicare payment per discharge by hospital and by diagnosis group (DRG)? Which DRGs are consistently above the national average cost? We want to rank hospitals by cost efficiency within each state.
+
+3. Length of Stay (LOS) Analysis
+What is average LOS by diagnosis and by hospital? Which diagnoses have the highest LOS variance — those are our targets for clinical pathway improvement. Show the top 10 DRGs by average LOS nationally.
+
+4. Readmission Risk Proxy
+We don't have direct readmission flags in this dataset, but we want a proxy: hospitals with high average LOS and high cost relative to their state peers should be flagged for review. Build a scoring model in SQL — not ML, just weighted ranking.
+
+5. Regional Benchmarking
+For each state: median cost per discharge, median LOS, total discharge volume. Allow the business to filter any hospital against its state benchmark. A hospital should know if it's in the top or bottom quartile for its state.
+
+6. Diagnosis Frequency
+What are the top 20 DRGs nationally by discharge volume? How does that ranking shift when you look at it by region? Some diagnoses are regionally concentrated — we want to see that.
+Pipeline must be scheduled, tested, and documented. If it breaks, we need to know before the business does.
+

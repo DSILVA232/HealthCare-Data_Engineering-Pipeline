@@ -1,6 +1,3 @@
-The Business Brief
-Here's how this would actually be handed to a data team:
-
 
 FROM: Sarah Chen, Head of Analytics
 TO: Data Engineering Team

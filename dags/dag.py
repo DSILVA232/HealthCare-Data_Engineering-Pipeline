@@ -15,7 +15,7 @@ def email_alert(context):
     dag_id = context.get("dag").dag_id
 
     send_email(
-        to="you@email.com",
+        to="you@email.com", # set you're email for alerts
         subject=f"Airflow Task Failed: {dag_id}",
         html_content=f"""
         <h3>Task Failed</h3>

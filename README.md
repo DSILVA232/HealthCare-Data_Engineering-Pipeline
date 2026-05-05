@@ -13,6 +13,7 @@ Orchestrated end-to-end by **Apache Airflow**, containerised with **Docker**.
 <img width="1000" height="600" alt="Architecture " src="diagrams/Architecture/Architecture.jpg"/>
 
 <div align="center">
+  
 | Layer | Tool |
 |---|---|
 | Storage | Google Cloud Storage |
@@ -20,12 +21,16 @@ Orchestrated end-to-end by **Apache Airflow**, containerised with **Docker**.
 | Warehouse | Snowflake |
 | Transformation | dbt |
 | Validation | Great Expectations + dbt tests |
+  
 </div>
 
-###                               Schema
+<div align="center">
 
-<img width="1000" height="600" alt="Schema " src="diagrams/Star%20Schema/Star_Schema.jpg"/>
+### Schema
 
+<img width="1000" height="600" alt="Schema" src="diagrams/Star%20Schema/Star_Schema.jpg"/>
+
+</div>
 ---
 
 ## Pipeline Tasks
@@ -60,7 +65,7 @@ Any failure at either stage stops the pipeline and triggers an email alert.
 
 ## How to Run
 
-> For initial setup instructions see: [Instructions](Innitialization/Instructions.md)
+> For initial setup instructions see: [Instructions](Initialization/Instructions.md)
 
 ```bash
 # Start containers

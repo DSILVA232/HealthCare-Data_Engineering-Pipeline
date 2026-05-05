@@ -10,8 +10,8 @@ The final output is a fully automated, self-contained pipeline that can run inde
 
 ## Architecture
 
-Orchestrated end-to-end by **Apache Airflow**, containerised with **Docker**.
-<img width="1000" height="600" alt="Architecture " src="diagrams/Architecture/Architecture.jpg"/>
+Orchestrated end to end by **Apache Airflow**, containerised with **Docker**.
+<img width="1000" height="620" alt="Architecture " src="diagrams/Architecture/Architecture.jpg"/>
 
 
 

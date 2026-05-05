@@ -30,7 +30,7 @@ gcloud iam service-accounts create $SA_NAME \
 
 gcloud projects add-iam-policy-binding $PROJECT_ID \
   --member="serviceAccount:${SA_NAME}@${PROJECT_ID}.iam.gserviceaccount.com" \
-  --role="roles/storage.objectViewer"
+  --role="roles/storage.objectAdmin"
 
 
 mkdir -p keys

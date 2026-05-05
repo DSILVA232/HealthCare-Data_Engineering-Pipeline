@@ -17,7 +17,7 @@ Orchestrated end to end by **Apache Airflow**, containerised with **Docker**.
 
 ## Schema
 
-<img width="1000" height="600" alt="Schema" src="diagrams/Star%20Schema/Star_Schema.jpg"/>
+<img width="1000" height="550" alt="Schema" src="diagrams/Star%20Schema/Star_Schema.jpg"/>
 
 ---
 
@@ -53,7 +53,7 @@ Any failure at either stage stops the pipeline and triggers an email alert.
 
 ## How to Run
 
-> For initial setup instructions see: [Instructions](Initialization/Instructions.md)
+> For initial setup instructions see: [Instructions](Instructions.md)
 
 ```bash
 # Start containers

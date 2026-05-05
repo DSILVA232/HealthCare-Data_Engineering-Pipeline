@@ -18,5 +18,7 @@ Thumbs.db
 
 
 #keys
-
 keys/
+
+#airflow
+config/airflow.cfg

@@ -1,4 +1,3 @@
-
 # Welcome to Great Expectations! Always know what to expect from your data.
 #
 # Here you can define datasources, batch kwargs generators, integrations and
@@ -9,7 +8,7 @@
 
 # config_version refers to the syntactic version of this config file, and is used in maintaining backwards compatibility
 # It is auto-generated and usually does not need to be changed.
-config_version: 4
+config_version: 4.0
 
 # This config file supports variable substitution which enables: 1) keeping
 # secrets out of source control & 2) environment-based configuration changes
@@ -75,10 +74,29 @@ data_docs_sites:
   # profiles from the uncommitted directory. Read more at https://docs.greatexpectations.io/docs/terms/data_docs
   local_site:
     class_name: SiteBuilder
-    # set to false to hide how-to buttons in Data Docs
     show_how_to_buttons: true
     store_backend:
-        class_name: TupleFilesystemStoreBackend
-        base_directory: uncommitted/data_docs/local_site/
+      class_name: TupleFilesystemStoreBackend
+      base_directory: uncommitted/data_docs/local_site/
     site_index_builder:
-        class_name: DefaultSiteIndexBuilder
+      class_name: DefaultSiteIndexBuilder
+fluent_datasources:
+  healthcare_data_source:
+    type: pandas_gcs
+    id: 3b2b06e1-1255-4874-abbe-f4262b1b472c
+    assets:
+      hospital_csv:
+        type: csv
+        id: 8ba9b5ff-1ace-459a-805e-fbcc52a882e7
+        batch_definitions:
+          hospital_2024:
+            id: 539154d9-4a97-4475-adac-879671fbf178
+            partitioner:
+              regex: Medicare_IP_Hospitals_by_Provider_and_Service_2024.csv$
+              param_names: []
+        connect_options:
+          gcs_prefix: raw/data/
+    bucket_or_name: landing-zone-1
+    gcs_options: {}
+analytics_enabled:
+data_context_id: 05846f8b-ce9b-4c5f-a363-3cf06615dfd8

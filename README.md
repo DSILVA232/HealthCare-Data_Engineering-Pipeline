@@ -9,16 +9,8 @@ The final output is a fully automated, self-contained pipeline that can run inde
 ---
 
 ## Architecture
-
-<img width="989" height="581" alt="Architecture " src="diagrams/Architecture/Architecture.jpg"/>
-
 Orchestrated end-to-end by **Apache Airflow**, containerised with **Docker**.
-
-
-<img width="989" height="581" alt="Schema " src="diagrams/Star%20Schema/Star_Schema.jpg"/>
-
-
-
+<img width="989" height="581" alt="Architecture " src="diagrams/Architecture/Architecture.jpg"/>
 | Layer | Tool |
 |---|---|
 | Storage | Google Cloud Storage |
@@ -26,6 +18,10 @@ Orchestrated end-to-end by **Apache Airflow**, containerised with **Docker**.
 | Warehouse | Snowflake |
 | Transformation | dbt |
 | Validation | Great Expectations + dbt tests |
+
+### Schema
+
+<img width="989" height="581" alt="Schema " src="diagrams/Star%20Schema/Star_Schema.jpg"/>
 
 ---
 

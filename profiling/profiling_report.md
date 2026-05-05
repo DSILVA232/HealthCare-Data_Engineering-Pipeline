@@ -70,6 +70,7 @@ These columns capture service volume and cost-related measures.
 - `Rndrng_Prvdr_Zip5` : `Int64`
 - `Rndrng_Prvdr_State_Abrvtn` : `String`
 - `Rndrng_Prvdr_RUCA` : `Float64`
+- `Rndrng_Prvdr_RUCA_Desc` : `String`
 
 ---
 

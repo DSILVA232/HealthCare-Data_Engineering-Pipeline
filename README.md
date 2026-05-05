@@ -17,7 +17,7 @@ Orchestrated end to end by **Apache Airflow**, containerised with **Docker**.
 
 ## Schema
 
-<img width="1000" height="550" alt="Schema" src="diagrams/Star%20Schema/Star_Schema.jpg"/>
+<img width="1000" height="570" alt="Schema" src="diagrams/Star%20Schema/Star_Schema.jpg"/>
 
 ---
 

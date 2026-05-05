@@ -42,3 +42,22 @@ CREATE OR REPLACE TABLE hospital_data_raw (
     ingestion_timestamp TIMESTAMP,
     source_file VARCHAR
 );
+
+-- create validation table for data ingestion usage 
+CREATE OR REPLACE TABLE validation_test_hospital_data_raw (
+    Rndrng_Prvdr_CCN INT,
+    Rndrng_Prvdr_Org_Name VARCHAR,
+    Rndrng_Prvdr_City VARCHAR,
+    Rndrng_Prvdr_St VARCHAR,
+    Rndrng_Prvdr_State_FIPS INT,
+    Rndrng_Prvdr_Zip5 INT,
+    Rndrng_Prvdr_State_Abrvtn VARCHAR,
+    Rndrng_Prvdr_RUCA FLOAT,
+    Rndrng_Prvdr_RUCA_Desc VARCHAR,
+    DRG_Cd INT,
+    DRG_Desc VARCHAR,
+    Tot_Dschrgs INT,
+    Avg_Submtd_Cvrd_Chrg FLOAT,
+    Avg_Tot_Pymt_Amt FLOAT,
+    Avg_Mdcr_Pymt_Amt FLOAT
+);

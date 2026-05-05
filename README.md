@@ -2,7 +2,7 @@
 
 An end to end ELT pipeline built to ingest, validate, transform, and serve healthcare data using a modern data stack. The focus of this project is the data engineering lifecycle, not analytics, with an emphasis on data quality, containerisation, and orchestration.
 
-<img width="1000" height="650" alt="DAG" src="diagrams/Sucess_Dag_Run.png"/>
+<img width="1000" height="720" alt="DAG" src="diagrams/Sucess_Dag_Run.png"/>
 
 The final output is a fully automated, self contained pipeline that can run independently on any machine. Containerised with Docker and orchestrated through Airflow, the pipeline incorporates data quality checks at multiple stages paired with loud alerting on failure ,delivering a reliable, production minded ELT process built on modern data stack tooling.
 

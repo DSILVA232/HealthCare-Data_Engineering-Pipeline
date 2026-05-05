@@ -1,0 +1,16 @@
+version: 2
+
+sources:
+  - name: healthcare
+    database: HEALTHCARE_DB
+    schema: raw
+    tables:
+      - name: HOSPITAL_DATA_RAW
+        columns:
+          - name: DRG_Cd
+            tests:
+              - not_null
+
+          - name: Rndrng_Prvdr_CCN
+            tests:
+              - not_null

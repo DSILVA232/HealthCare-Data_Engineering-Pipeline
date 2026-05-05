@@ -1,0 +1,39 @@
+models:
+  - name: fct_hospital
+    columns:
+      - name: drg_key
+        tests:
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('dim_drg')
+                field: drg_key
+              config:
+                severity: warn
+
+                
+      - name: provider_key
+        tests:
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('dim_provider')
+                field: provider_key
+              config:
+                severity: warn
+
+
+  - name: dim_drg
+    columns:
+      - name: drg_key
+        tests:
+          - unique
+          - not_null
+
+
+  - name: dim_provider
+    columns:
+      - name: provider_key
+        tests:
+          - unique
+          - not_null

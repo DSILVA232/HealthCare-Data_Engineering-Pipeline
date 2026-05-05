@@ -1,0 +1,50 @@
+[0m13:15:43.197151 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ecacb7f6420>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ecac9d26f00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ecac9d25be0>]}
+
+
+============================== 13:15:43.200388 | 6c2e2b4d-bee4-4afe-b73d-8630b26095a7 ==============================
+[0m13:15:43.200388 [info ] [MainThread]: Running with dbt=1.11.8
+[0m13:15:43.200786 [debug] [MainThread]: running dbt with arguments {'log_cache_events': 'False', 'log_format': 'default', 'no_print': 'None', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'write_json': 'True', 'debug': 'False', 'log_path': 'logs', 'printer_width': '80', 'warn_error': 'None', 'use_experimental_parser': 'False', 'cache_selected_only': 'False', 'empty': 'None', 'indirect_selection': 'eager', 'introspect': 'True', 'static_parser': 'True', 'invocation_command': 'dbt init', 'target_path': 'None', 'quiet': 'False', 'profiles_dir': '/home/diogo_silva/.dbt', 'use_colors': 'True', 'fail_fast': 'False', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])'}
+[0m13:15:43.211952 [info ] [MainThread]: Creating dbt configuration folder at /home/diogo_silva/.dbt
+[0m13:16:10.613430 [debug] [MainThread]: Starter project path: /home/diogo_silva/projects/healthcare/venv/lib/python3.12/site-packages/dbt/include/starter_project
+[0m13:16:10.618159 [info ] [MainThread]: 
+Your new dbt project "data_pipeline" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m13:16:10.618459 [info ] [MainThread]: Setting up your profile.
+[0m13:16:15.914171 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m13:16:15.914575 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m13:16:15.914814 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m13:29:01.866033 [info ] [MainThread]: Profile data_pipeline written to /home/diogo_silva/.dbt/profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m13:29:01.867770 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 798.70917, "process_in_blocks": "254144", "process_kernel_time": 0.352507, "process_mem_max_rss": "200940", "process_out_blocks": "96", "process_user_time": 3.571195}
+[0m13:29:01.868461 [debug] [MainThread]: Command `dbt init` succeeded at 13:29:01.868372 after 798.71 seconds
+[0m13:29:01.868777 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7eca8a9da600>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7eca8a342780>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7eca893ccd70>]}
+[0m13:29:01.869094 [debug] [MainThread]: Flushing usage events
+[0m13:29:02.993620 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m14:05:22.218043 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77d48ba1af00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77d48b4a9b80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77d48b51ede0>]}
+
+
+============================== 14:05:22.220733 | 82ddf730-a876-4248-b683-c7cf0736299a ==============================
+[0m14:05:22.220733 [info ] [MainThread]: Running with dbt=1.11.8
+[0m14:05:22.221097 [debug] [MainThread]: running dbt with arguments {'log_format': 'default', 'no_print': 'None', 'log_path': 'logs', 'cache_selected_only': 'False', 'warn_error': 'None', 'profiles_dir': '/home/diogo_silva/.dbt', 'version_check': 'True', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True', 'fail_fast': 'False', 'introspect': 'True', 'log_cache_events': 'False', 'debug': 'False', 'use_experimental_parser': 'False', 'invocation_command': 'dbt deps', 'write_json': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'indirect_selection': 'eager', 'partial_parse': 'True', 'use_colors': 'True', 'empty': 'None', 'printer_width': '80', 'quiet': 'False'}
+[0m14:05:22.221461 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /home/diogo_silva/projects/healthcare/dbt/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m14:05:22.222103 [debug] [MainThread]: Resource report: {"command_name": "deps", "command_success": false, "command_wall_clock_time": 0.03823216, "process_in_blocks": "0", "process_kernel_time": 0.104502, "process_mem_max_rss": "102504", "process_out_blocks": "24", "process_user_time": 0.787787}
+[0m14:05:22.222367 [debug] [MainThread]: Command `dbt deps` failed at 14:05:22.222303 after 0.04 seconds
+[0m14:05:22.222613 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77d48ba1af00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77d48b83c080>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77d48b0ab9e0>]}
+[0m14:05:22.222828 [debug] [MainThread]: Flushing usage events
+[0m14:05:23.230095 [debug] [MainThread]: An error was encountered while trying to flush usage events

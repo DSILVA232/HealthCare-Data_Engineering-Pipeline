@@ -1,27 +1,27 @@
 # Healthcare Data Pipeline
 
-An end-to-end ELT pipeline built to ingest, validate, transform, and serve healthcare data using a modern data stack. The focus of this project is the data engineering lifecycle — not analytics — with an emphasis on data quality, containerisation, and orchestration.
+An end to end ELT pipeline built to ingest, validate, transform, and serve healthcare data using a modern data stack. The focus of this project is the data engineering lifecycle — not analytics — with an emphasis on data quality, containerisation, and orchestration.
 
-![Airflow DAG Success](airflow_success.png)
+<img width="950" height="550" alt="DAG" src="diagrams/Sucess_Dag.png"/>
 
-The final output is a fully automated, self-contained pipeline that can run independently on any machine. Containerised with Docker and orchestrated through Airflow, the pipeline incorporates data quality checks at multiple stages with alerting on failure — delivering a reliable, production-minded ELT process built on modern data stack tooling.
+The final output is a fully automated, self-contained pipeline that can run independently on any machine. Containerised with Docker and orchestrated through Airflow, the pipeline incorporates data quality checks at multiple stages paired with loud alerting on failure ,delivering a reliable, production minded ELT process built on modern data stack tooling.
 
 ---
 
 ## Architecture
 Orchestrated end-to-end by **Apache Airflow**, containerised with **Docker**.
-<img width="989" height="581" alt="Architecture " src="diagrams/Architecture/Architecture.jpg"/>
-| Layer | Tool |
-|---|---|
-| Storage | Google Cloud Storage |
-| Orchestration | Apache Airflow |
-| Warehouse | Snowflake |
-| Transformation | dbt |
-| Validation | Great Expectations + dbt tests |
+<img width="950" height="550" alt="Architecture " src="diagrams/Architecture/Architecture.jpg"/>
+                                  | Layer | Tool |
+                                  |---|---|
+                                  | Storage | Google Cloud Storage |
+                                  | Orchestration | Apache Airflow |
+                                  | Warehouse | Snowflake |
+                                  | Transformation | dbt |
+                                  | Validation | Great Expectations + dbt tests |
 
-### Schema
+###                               Schema
 
-<img width="989" height="581" alt="Schema " src="diagrams/Star%20Schema/Star_Schema.jpg"/>
+<img width="950" height="550" alt="Schema " src="diagrams/Star%20Schema/Star_Schema.jpg"/>
 
 ---
 

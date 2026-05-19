@@ -10,7 +10,7 @@ venv/
 .env
 
 #data
-data/raw/*.csv
+#data/raw/*.csv
 
 #os
 .DS_Store
@@ -23,6 +23,5 @@ keys/
 #airflow
 config/airflow.cfg
 logs/
-
 airflow.cfg
 *.db

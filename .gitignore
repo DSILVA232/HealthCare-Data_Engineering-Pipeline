@@ -10,7 +10,7 @@ venv/
 .env
 
 #data
-#data/raw/*.csv
+data/raw/*.csv
 
 #os
 .DS_Store

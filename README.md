@@ -1,28 +1,24 @@
 # Healthcare Data Pipeline
 
-An end-to-end ELT pipeline built to ingest, validate, transform, and serve healthcare data using a modern data stack. The focus of this project is the data engineering lifecycle — not analytics — with an emphasis on data quality, containerisation, and orchestration.
+An end to end ELT pipeline built to ingest, validate, transform, and serve healthcare data using a modern data stack. The focus of this project is the data engineering lifecycle, not analytics, with an emphasis on data quality, containerisation, and orchestration.
 
-![Airflow DAG Success](airflow_success.png)
+<img width="1000" height="720" alt="DAG" src="diagrams/Sucess_Dag_Run.png"/>
 
-The final output is a fully automated, self-contained pipeline that can run independently on any machine. Containerised with Docker and orchestrated through Airflow, the pipeline incorporates data quality checks at multiple stages with alerting on failure — delivering a reliable, production-minded ELT process built on modern data stack tooling.
+The final output is a fully automated, self contained pipeline that can run independently on any machine. Containerised with Docker and orchestrated through Airflow, the pipeline incorporates data quality checks at multiple stages paired with loud alerting on failure ,delivering a reliable, production minded ELT process built on modern data stack tooling.
 
 ---
 
 ## Architecture
 
-```
-GCS (Raw Storage) → Great Expectations (Validation) → Snowflake (Raw Schema) → dbt (Staging + Star Schema)
-```
+Orchestrated end to end by **Apache Airflow**, containerised with **Docker**.
 
-Orchestrated end-to-end by **Apache Airflow**, containerised with **Docker**.
+<img width="1000" height="620" alt="Architecture " src="diagrams/Architecture/Architecture.jpg"/>
 
-| Layer | Tool |
-|---|---|
-| Storage | Google Cloud Storage |
-| Orchestration | Apache Airflow |
-| Warehouse | Snowflake |
-| Transformation | dbt |
-| Validation | Great Expectations + dbt tests |
+
+
+## Schema
+
+<img width="1000" height="600" alt="Schema" src="diagrams/Star%20Schema/Star_Schema.jpg"/>
 
 ---
 
@@ -58,7 +54,7 @@ Any failure at either stage stops the pipeline and triggers an email alert.
 
 ## How to Run
 
-> For initial setup instructions see: `link to setup docs`
+> For initial setup instructions see: [Instructions](Instructions.md)
 
 ```bash
 # Start containers

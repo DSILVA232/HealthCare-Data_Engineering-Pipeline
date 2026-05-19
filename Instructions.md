@@ -127,9 +127,9 @@ Run the SQL setup scripts in the following order. Each script must complete with
 
 | Order | File | Purpose |
 |-------|------|---------|
-| 1 | `SQL/bootstrap.sql` | Creates databases, schemas, roles, warehouse |
-| 2 | `SQL/landing_zone_setup.sql` | Configures RAW schema and tables |
-| 3 | `SQL/storage_integration.sql` | Links Snowflake to your GCS bucket |
+| 1 | `Snowflake_Initialization/bootstrap.sql` | Creates databases, schemas, roles, warehouse |
+| 2 | `Snowflake_Initialization/landing_zone_setup.sql` | Configures RAW schema and tables |
+| 3 | `Snowflake_Initialization/storage_integration.sql` | Links Snowflake to your GCS bucket |
 
 Reference: https://docs.snowflake.com/en/user-guide/data-load-gcs-config
 
